@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    line-height: 1.7;
+}
+.container{
+    width: 1150px;
+    margin: auto;
+}
+.row{
+    display: flex;
+ flex-wrap: wrap;
+}
+img{
+    max-width: 100%;
+}
+.col-3{
+max-width: 33.33%;
+flex-basis: 33.33%;
+padding: 10px;
+}
+/* sociallist */
+.social-list{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    right: 10px;
+    transform: translateY(-50%);
+    
+}
+.social-list li{
+flex: 1 , 0 auto;
+}
+.social-list a{
+
+background-color: #F4C430;
+color: black;
+width: 35px;
+height: 35px;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+display: flex;
+margin-bottom: 6px;
+text-decoration: none;
+box-shadow: 5px 4px 10px #0000003b ;
+border: 1px solid #162c48 ;
+}
+.social-list li a:hover{
+background-color: transparent;
+color: black;
+transition: all ease .5s;
+}
+/* header css */
+.menu{
+    max-width: 50%;
+    flex-basis: 50%;
+    background-color: teal;
+    display: block;
+}
+.picture{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.head h2{
+    padding: 10px 15px;
+    color: #F4C430;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+nav ul li{
+    
+}
+nav ul li a{
+   display: block; 
+   color: white;
+   text-transform: capitalize;
+   text-decoration: none;
+   padding: 0px 15px;
+font-weight: 400;
+  font-size: 18px;
+  border-bottom: 1px solid none ; 
+}
+nav ul li a span{
+    width: 0;
+    height: 2.5px;
+    background-color:#3b506c ;
+    display: block;
+}
+nav ul li a:hover span{
+    width: 100%;
+    transition: all ease .5s;
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+    transition: all ease .5s;
+    color:#F4C430 ;
+ 
+}
+.intro{
+    margin-left: 12rem;
+    margin-top: 6rem;
+max-width: 200px;
+}
+.intro h2{
+    color:#F4C430 ;
+font-size: 40px;
+font-weight: 400;
+}
+.intro h1{
+    color: white;
+    font-size: 45px;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+.intro p{
+    color: white;
+    font-size: 13px;
+}
+
+ /* about me */
+.about{
+    background-color: rgb(233, 229, 229);
+}
+.about-details{
+    max-width: 65%;
+    text-align: center;
+    margin: auto;
+    padding: 70px 0;
+}
+.head-abt h1{
+    font-size: 40px;
+    color: teal;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.abt-details p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+button {
+height: 2.5rem;
+width: 9rem;
+background-color:#F4C430 ;
+border: none;
+transition: all ease .6s;
+}
+button a{
+    text-decoration: none;
+    color: teal;
+    font-weight: 500;
+}
+button:hover{
+    background-color: transparent;
+    color: #F4C430;
+    border: 1px solid teal ;
+    
+}
+ /* video */
+ .heading h2{
+    font-size: 40px;
+    color: teal;
+    margin: 30px 0;
+    text-align: center;
+ }
+ /* photos */
+ .photo img{
+max-width: 100%;
+ }
+ 
+ .end-sec .menu{
+     
+     padding-top: 70px;
+ }
+ .end-sec .menu h1{
+     font-size: 40px;
+     padding-right: 0;
+     color: #F4C430;
+     margin-bottom: 20px;
+ }
+
+
+.social-ic{
+    display: flex;
+    margin-bottom: 20px;
+}
+.social-ic li{
+    list-style-type: none;
+    padding-right: 10px;
+}
+.social-ic a{
+    text-decoration: none;
+    color: white;
+}
+.end-sec .menu{
+    padding-left: 13rem;
+    color: white;
+}
+.person-details{
+    margin: 20px 0;
+    font-size: 14px;
+}
+.end-sec .picture img{
+    height: 100%;
+}
+
+
+/* Footer css */
+footer{
+    margin-top: 10px;
+    background-color: teal;
+    text-align: center;
+    padding: 10px 0;
+    }
+    footer p{
+       color: #ffffff9f; 
+       
+    }
+    footer p strong{
+    color: #FFF;
+    letter-spacing: 3px;
+    }
+@media  (max-width: 1200px){
+    
+.container{
+    max-width: 750px;
+}
+.intro{
+    margin-top: 3rem;
+}
+.intro h2 {
+    font-size: 35px;
+    
+}
+.intro h1 {
+    font-size: 35px;
+    
+}
+.head h2 {
+    font-size: 21px;
+  
+}
+nav ul li a {
+    padding: 0px 9px;
+    
+}
+    }
+   
+@media  (max-width: 992px){
+    .photos{
+        max-width: 100%;
+    }
+    .head h2 {
+        font-size: 18px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        
+    }
+    .intro{
+        margin-top: 2rem;
+        margin-left: 6rem;
+    }
+    .intro h2 {
+        font-size: 28px;
+    }
+    .intro h1 {
+        font-size: 25px;
+        
+    }
+    .intro p {
+        font-size: 13px;
+        
+    }
+    .head-abt h1 {
+        font-size: 35px;
+    }
+    .abt-details p {
+        font-size: 14px;
+    }
+    .end-sec .menu{
+        padding-left: 8rem;
+        color: white;
+    }
+    .social-list a{
+
+        width: 30px;
+        height: 30px;
+        
+        }
+}
+@media  (max-width: 768px){
+    .photos{
+        max-width: 100%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .head h2 {
+        font-size: 16px;
+    }
+    nav ul li a {
+        padding: 0px 5px;
+        font-size: 14px;
+    }
+    .intro h2 {
+        font-size: 22px;
+    }
+    .intro h1 {
+        font-size: 18px;
+    }
+    .intro{
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    .intro p {
+        
+        font-size: 11px;
+    }
+    .head-abt h1 {
+        font-size: 30px;
+    }
+    .abt-details p {
+        font-size: 12px;
+    }
+    .end-sec .menu{
+        padding-left: 5rem;
+        color: white;
+    }
+    .head h2 {
+        padding: 10px 5px;
+       
+    }
+}
+@media  (max-width: 576px){
+    
+    .menu{
+        max-width: 100%;
+        flex-basis: 100%;
+       padding-bottom: 20px;
+    }
+    .picture{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .intro{
+       display: none;
+    }
+    .social-list{
+        display: none;
+        
+    }
+    .about-details {
+        
+        padding: 40px 0;
+    }
+    .about-details p{
+        text-align: justify;
+        font-size: 15px;
+    }
+    .col-3{
+
+padding: 5px;
+}
+footer{
+    margin-top: 10px;
+    background-color: teal;
+    text-align: center;
+    padding: 5px 0;
+    }
+    footer p{
+       color: #ffffff9f; 
+       font-size: 13px;
+    }
+    footer p strong{
+    color: #FFF;
+    letter-spacing: 3px;
+    }
+    .heading h2 {
+        font-size: 30px;
+        
+    }
+    .end-sec .menu h1 {
+        font-size: 30px;
+        
+    }
+    .end-sec .menu {
+        padding-top: 40px;
+    }
+}
